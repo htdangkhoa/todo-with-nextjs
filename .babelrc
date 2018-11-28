@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "next/babel",
+    ["minify", {
+        "builtIns": false,
+        "evaluate": false,
+        "mangle": false
+      }]
+  ], "plugins": [
+    "babel-plugin-styled-components",
+    ["@babel/plugin-proposal-decorators", {
+        "legacy": true
+      }],
+    ["@babel/plugin-proposal-class-properties", {
+        "loose": true
+      }]
+  ]
+}
